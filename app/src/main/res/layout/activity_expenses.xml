@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.draksingh.foodiez.Expenses">
+    <TextView
+        android:id="@+id/expensestext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="EXPENSES"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/rajtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/expensestext"
+        android:text="RAJ"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+        android:id="@+id/rajval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="0"
+        android:layout_marginLeft="100dp"
+
+        android:layout_above="@+id/chechitext"
+        android:layout_alignEnd="@+id/expensestext"
+        android:layout_marginEnd="32dp" />
+    <TextView
+        android:id="@+id/chechitext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rajtext"
+        android:text="CHECHI"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+        android:id="@+id/chechival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="0"
+        android:layout_above="@+id/teerathtext"
+        android:layout_alignStart="@+id/rajval" />
+    <TextView
+        android:id="@+id/teerathtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/chechitext"
+        android:text="TEERATH"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+    android:id="@+id/teerathval"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="0"
+        android:layout_above="@+id/bikanerval"
+        android:layout_marginBottom="18dp"
+        android:layout_alignStart="@+id/bikanerval" />
+    <TextView
+        android:id="@+id/bikanertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/teerathtext"
+        android:text="BIKANER"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+        android:id="@+id/bikanerval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="0"
+        android:layout_alignBaseline="@+id/bikanertext"
+        android:layout_alignBottom="@+id/bikanertext"
+        android:layout_alignStart="@+id/rajval" />;
+        android:layout_marginLeft="100dp"
+        />
+
+</RelativeLayout>

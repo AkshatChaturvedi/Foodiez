@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.draksingh.foodiez.feedback">
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BILL"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/orderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order id"
+        android:textSize="15dp"
+        android:layout_below="@+id/bill"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+         />
+    <TextView
+        android:id="@+id/orderidvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/orderid"
+        android:layout_below="@+id/bill"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/b_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/orderidvalue"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/bill"/>
+
+    <TextView
+        android:id="@+id/b_fooditem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderid"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/b_canteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b_fooditem"
+        android:layout_alignBottom="@+id/b_fooditem"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/b_fooditem" />
+
+    <TextView
+        android:id="@+id/b_quant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderid"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/b_canteen" />
+
+    <TextView
+        android:id="@+id/b_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderid"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/b_quant" />
+
+
+    <TextView
+        android:id="@+id/subprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderid"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/b_price" />
+    <TextView
+        android:id="@+id/grandtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_above="@+id/backtohome"
+        android:layout_toEndOf="@+id/backtohome"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:id="@+id/backtohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="127dp"
+        android:text="go back to home"
+        android:onClick="backhome"/>
+</RelativeLayout>

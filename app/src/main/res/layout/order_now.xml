@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.draksingh.foodiez.order">
+
+    <RadioButton
+        android:id="@+id/raj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raj"
+        android:onClick="onClick"
+        android:layout_marginTop="40dp"
+        />
+
+    <RadioButton
+        android:id="@+id/teerath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Teerath"
+        android:onClick="teerath"
+        android:layout_below="@+id/raj"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:id="@+id/chechi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chechi"
+        android:text="Chechi"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/teerath"
+        android:layout_alignStart="@+id/bikaner" />
+
+    <RadioButton
+        android:id="@+id/bikaner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="bikaner"
+        android:text="Bikaner"
+        android:layout_below="@+id/chechi"
+        android:layout_marginTop="37dp" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.draksingh.foodiez.HomePage"
+    android:background="#B2EBF2"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="72dp"
+        android:background="#ff8878"
+        android:text="order now"
+        tools:textAlignment="viewStart"
+        android:onClick="order"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="34dp"
+        android:text="My Expenses"
+        android:background="#ff8878"
+        android:onClick="expense"
+        android:layout_below="@+id/button4"
+        android:layout_toEndOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff8878"
+        android:text="feedback"
+        tools:textAlignment="viewStart"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/button5"
+        android:onClick="feedback"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="account details"
+        android:background="#ff8878"
+        android:layout_below="@+id/button6"
+        android:layout_toEndOf="@+id/button6"
+        android:onClick="details"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button6"
+        android:layout_below="@+id/button7"
+        android:layout_marginTop="32dp"
+        android:background="#ff8878"
+        android:text="about"
+        android:onClick="about"
+        tools:textAlignment="viewStart" />
+</RelativeLayout>

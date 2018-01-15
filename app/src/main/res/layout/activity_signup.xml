@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.draksingh.foodiez.SignupActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="25dp"
+        android:text="SIGNUP"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Full Name" />
+
+    <EditText
+        android:id="@+id/e_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_alignStart="@+id/e_name"
+        android:layout_below="@+id/e_name"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Registration no."
+        android:inputType="number" />
+
+
+
+    <Spinner
+        android:id="@+id/s_hostel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:entries="@array/Hostels"
+        android:layout_below="@+id/e_phone"
+        android:layout_alignEnd="@+id/e_reg"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="72dp">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/e_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Room no."
+        android:inputType="number"
+        android:layout_above="@+id/e_phone"
+        android:layout_alignStart="@+id/e_phone"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="72dp"/>
+
+    <EditText
+        android:id="@+id/e_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/e_email"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Contact no."
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/e_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email id"
+        android:inputType="textPersonName"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="72dp"/>
+
+    <EditText
+        android:id="@+id/e_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/e_repassword"
+        android:layout_alignStart="@+id/e_repassword"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/e_repassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Re-type password "
+        android:inputType="textPassword"
+        android:layout_above="@+id/signup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginStart="72dp"/>
+
+    <Button
+        android:id="@+id/signup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:onClick="createButtonClicked"
+        android:text="signup" />
+
+
+</LinearLayout>
+
+</ScrollView>

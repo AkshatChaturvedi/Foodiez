@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.draksingh.foodiez">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".BikanerMenu" />
+        <activity android:name=".ChechiMenu" />
+        <activity android:name=".RajMenu" />
+        <activity android:name=".TeerathMenu" />
+        <activity android:name=".details" />
+        <activity android:name=".feedback" />
+        <activity android:name=".order" />
+        <activity android:name=".about" />
+        <activity android:name=".confirmation" />
+        <activity android:name=".bill" />
+        <activity android:name=".BikanerSplash" />
+        <activity android:name=".ChechiSplash" />
+        <activity android:name=".TeerathSplash" />
+        <activity android:name=".RajSplash" />
+
+        <provider
+            android:name=".TableUsers"
+            android:authorities="com.example.draksingh.foodiez" />
+        <provider
+            android:name=".TableOrders"
+            android:authorities="com.example.draksingh.foodiez.b" />
+        <provider
+            android:name=".TableMenu"
+            android:authorities="com.example.draksingh.foodiez" />
+        <provider
+            android:name=".TempOrders"
+            android:authorities="com.example.draksingh.foodiez.a" />
+
+        <!--
+              <service
+              android:name=".MyService"
+              android:enabled="true"
+              android:exported="true"></service>
+        -->
+        <activity android:name=".Expenses"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.draksingh.foodiez.feedback">
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idratingbar"
+        android:stepSize="0.25"
+        android:numStars="5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Us"
+        android:onClick="rateus"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/editText10"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button9" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/idratingbar"
+        android:layout_below="@+id/idratingbar"
+        android:layout_marginTop="85dp"
+        android:textStyle="bold"
+        android:text="Comments"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView22"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignEnd="@+id/idratingbar"
+        android:layout_alignStart="@+id/textView22" />
+
+</RelativeLayout>

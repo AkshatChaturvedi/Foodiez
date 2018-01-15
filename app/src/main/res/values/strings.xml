@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FooDiez</string>
+    <string-array name="Quantity">
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+    </string-array>
+
+    <string-array name="Hostels">
+        <item> HOSTEL</item>
+        <item> SVBH</item>
+        <item> PATEL</item>
+        <item> TILAK</item>
+        <item> TAGORE</item>
+        <item> TANDON</item>
+        <item> RAMAN</item>
+    </string-array>
+
+    <string name="aboutus">Being a part of MNNIT, We know the condition of Our Mess food .So, here we are, presenting a door-to-door service for MNNITians of their favourite food from their BELOVED CANTEENS.</string>
+    <string name="contactus">For any queries, mail us at foodiez@mnnit.ac.in\nMobile : +91-9997879982</string>
+    <string name="developers"> AVIRAJ SINGH \n AKSHAT CHATURVEDI \n ANSHUL FATWANI\n SPECIAL THANKS TO DROIDRUSH COORDINATORS</string>
+
+
+</resources>

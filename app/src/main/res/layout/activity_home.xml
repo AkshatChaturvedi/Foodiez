@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.draksingh.foodiez.order"
+
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="38dp"
+
+        android:text="Order now"
+        tools:textAlignment="viewStart"
+        android:onClick="order"
+        android:background="@layout/round_shape"
+        android:textColor="#f8fdf9"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="My\nExpenses"
+        android:onClick="expense"
+
+        android:background="@layout/round_shape"
+        android:textColor="#f8fdf9"
+        android:layout_below="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:layout_marginStart="32dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="feedback"
+        tools:textAlignment="viewStart"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/button5"
+        android:onClick="feedback"
+        android:background="@layout/round_shape"
+        android:textColor="#f8fdf9"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account\nDetails"
+
+
+        android:onClick="details"
+        android:background="@layout/round_shape"
+        android:textColor="#f8fdf9"
+        android:layout_below="@+id/button6"
+        android:layout_alignStart="@+id/button5"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="about"
+        tools:textAlignment="viewStart"
+        android:onClick="about"
+        android:background="@layout/round_shape"
+        android:textColor="#f8fdf9"
+        android:layout_below="@+id/button7"
+        android:layout_alignStart="@+id/button6"
+        android:textAlignment="center"/>
+
+
+
+</RelativeLayout>
